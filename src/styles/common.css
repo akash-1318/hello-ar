@@ -1,0 +1,21 @@
+:root{
+    --font-color: #464646;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size:62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+}
+
+.space__2rem {
+    height: 2rem;
+    width: 100%;
+}
