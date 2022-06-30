@@ -1,5 +1,8 @@
 :root{
     --font-color: #464646;
+    --primary-color: #2dcc70;
+    --secondry-text-color:#696b79;
+    --dark-secondry-color:#d8d8da;
 }
 
 *{
@@ -18,4 +21,10 @@ html {
 .space__2rem {
     height: 2rem;
     width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
