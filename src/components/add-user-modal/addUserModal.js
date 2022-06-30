@@ -1,6 +1,16 @@
 import "./addUserModal.css";
+import {usePrimaryStatesContext} from "../../context/context"
+import { useState } from "react";
 
 function AddUserModal() {
+  const { state, dispatch } = usePrimaryStatesContext();
+  const {userData, modal} = state;
+  const [userInfo, setUserInfo] = useState({
+      role : "Admin",
+      username : "",
+      lastSignedIn : null
+  })
+
   return (
     <>
       <div className="modal__container">
@@ -20,19 +30,23 @@ function AddUserModal() {
             <div className="credential__fields">
               <div className="email__field">
                 <label>Email Id of User</label>
-                <input type="text" />
+                <input type="text" onChange={(e)=> setUserInfo({...userInfo, username : e.target.value})} />
               </div>
               <div className="password__field">
                 <label>Role</label>
-                <select name="role" id="roles" className="cselect">
-                  <option value="volvo">Admin</option>
-                  <option value="saab">Owner</option>
-                  <option value="mercedes">Seller</option>
+                <select name="role" id="roles" onChange={(e) => setUserInfo({...userInfo, role : e.target.value})}>
+                  <option value="Admin">Admin</option>
+                  <option value="Owner">Owner</option>
+                  <option value="Seller">Seller</option>
                 </select>
               </div>
               <div className="modal__cta">
-                  <button className="modal__cta-btn cancel">Cancel</button>
-                  <button className="modal__cta-btn add">Add</button>
+                  <button className="modal__cta-btn cancel" onClick={() => dispatch({type : "SET_MODAL", payload : !modal})}>Cancel</button>
+                  <button className="modal__cta-btn add" onClick={()=>{
+                      if(userInfo.username){
+                        dispatch({type : "ADD_USER", payload : userInfo})
+                      }
+                  }}>Add</button>
               </div>
             </div>
           </div>
