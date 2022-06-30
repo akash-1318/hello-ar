@@ -1,0 +1,21 @@
+.sidebar__menus{
+    width: 25rem;
+    padding: 2rem 0rem;
+    height: 100vh;
+    color: var(--secondry-text-color);
+    font-weight: 600;
+    border-right: 1px solid var(--dark-secondry-color);
+}
+
+.sidebar__menu {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 2rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.sidebar__menu:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
