@@ -4,7 +4,8 @@
     --secondry-text-color:#696b79;
     --dark-secondry-color:#d8d8da;
     --black-color : #000;
-    --white-color: rgb(255, 255, 255);
+    --light-red : rgb(255, 130, 130);
+    --white-color: #ffffff;
 }
 
 *{

@@ -1,0 +1,117 @@
+.modal__container {
+    position: fixed;
+    z-index: 111;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    width: 75rem;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.modal__left {
+    padding: 2rem;
+    width: 45%;
+    background-color: var(--light-red);
+    color: var(--white-color);
+    text-align: center;
+    overflow: hidden;
+}
+
+.modal__left > i {
+    font-size: 25rem;
+}
+
+.modal__left > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: -3rem;
+    color: var(--white-color);
+    opacity: .8;
+}
+
+.modal__right {
+    padding: 3rem 2rem;
+    width: 55%;
+}
+
+.primary__text {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.email__field, .password__field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.email__field > input {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark-secondry-color);
+    outline: none;
+}
+
+.email__field > label, .password__field > label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.password__field {
+    width: 50%;
+    position: relative;
+}
+
+#roles{
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark-secondry-color);
+    background-image: url('../../assets//images//down-arrow.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right 1rem center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: 1.5rem;
+    outline:none;
+}
+
+.modal__cta {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: right;
+}
+
+.modal__cta-btn{
+    width: 10rem;
+    margin-right: 2rem;
+    padding: .8rem 2rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.add {
+    background-color: var(--primary-color);
+}
+
+.cancel {
+    background-color: rgb(255, 196, 0);
+}

@@ -1,0 +1,1 @@
+export {Setting} from "./setting-page/setting"
