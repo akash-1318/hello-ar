@@ -1,6 +1,7 @@
 import "./addUserModal.css";
 import {usePrimaryStatesContext} from "../../context/context"
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 function AddUserModal() {
   const { state, dispatch } = usePrimaryStatesContext();
@@ -45,6 +46,7 @@ function AddUserModal() {
                   <button className="modal__cta-btn add" onClick={()=>{
                       if(userInfo.username){
                         dispatch({type : "ADD_USER", payload : userInfo})
+                        toast.success("New user added")
                       }
                   }}>Add</button>
               </div>
