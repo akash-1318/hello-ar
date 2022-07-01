@@ -24,3 +24,23 @@
     font-size: 10rem;
     text-align: center;
 }
+
+th {
+    position: relative;
+}
+
+.arrow__btns{
+    font-size: 1.1rem;
+    text-align: right;
+    display: inline-block;
+    margin-left: auto;
+    position: absolute;
+    right: .8rem;
+    top: 1.4rem;
+}
+
+.arrow__btns > i{
+    display: block;
+    color: var(--secondry-text-color);
+    opacity: .4;
+}
