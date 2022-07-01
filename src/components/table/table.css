@@ -1,22 +1,3 @@
-.styled__table {
-    border-collapse: collapse;
-    margin: 4rem 0;
-    font-size: 2rem;
-    width: 100%;
-}
-
-.styled__table thead tr {
-    text-align: left;
-    background-color: rgb(235, 235, 235);
-}
-
-.styled__table th,
-.styled__table td {
-    padding: 1.2rem 2.5rem;
-    font-size: 2rem;
-    border: 1px solid var(--dark-secondry-color);
-}
-
 thead tr th:nth-child(1){
     width: 10%;
 }

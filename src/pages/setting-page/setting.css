@@ -19,10 +19,23 @@
     outline: none;
 }
 
-.no__data-container {
-    margin-top: 12rem;
-    font-size: 10rem;
-    text-align: center;
+.styled__table {
+    border-collapse: collapse;
+    margin: 4rem 0;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.styled__table thead tr {
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+}
+
+.styled__table th,
+.styled__table td {
+    padding: 1.2rem 2.5rem;
+    font-size: 2rem;
+    border: 1px solid var(--dark-secondry-color);
 }
 
 th {
@@ -43,4 +56,10 @@ th {
     display: block;
     color: var(--secondry-text-color);
     opacity: .4;
+}
+
+.no__data-container {
+    margin-top: 12rem;
+    font-size: 10rem;
+    text-align: center;
 }
