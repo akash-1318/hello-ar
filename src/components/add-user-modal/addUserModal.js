@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 function AddUserModal() {
   const { state, dispatch } = usePrimaryStatesContext();
-  const {userData, modal} = state;
+  const {modal} = state;
   const [userInfo, setUserInfo] = useState({
       role : "Admin",
       username : "",

@@ -15,6 +15,13 @@
     cursor: pointer;
 }
 
+.navlink {
+    width: 25rem;
+    position:absolute;
+    text-align: left;
+    text-decoration: none;
+}
+
 .sidebar__menu:hover{
     background-color: var(--primary-color);
     color: var(--white-color);

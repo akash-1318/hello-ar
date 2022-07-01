@@ -18,8 +18,6 @@ const PrimaryStatesProvider = ({children}) => {
         } 
     },[state.userData])
 
-    console.log("hello")
-
     return(
         <PrimaryStates.Provider value={{state, dispatch}}>
             {children}

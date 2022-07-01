@@ -4,12 +4,11 @@ import { toast } from "react-toastify";
 
 function Table({ user, index }) {
   const { dispatch } = usePrimaryStatesContext();
-
   return (
     <tr>
       <td>{index + 1}</td>
       <td>{user.username}</td>
-      <td>1 hour</td>
+      <td>Few minutes ago</td>
       <td>{user.role}</td>
       <td>
         <i
