@@ -37,9 +37,27 @@ function Setting() {
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>User</th>
-                      <th>Last Signed In</th>
-                      <th>Role</th>
+                      <th>
+                        User{" "}
+                        <div className="arrow__btns">
+                          <i class="bx bxs-up-arrow"></i>
+                          <i class="bx bxs-down-arrow"></i>
+                        </div>{" "}
+                      </th>
+                      <th>
+                        Last Signed In{" "}
+                        <div className="arrow__btns">
+                          <i class="bx bxs-up-arrow"></i>
+                          <i class="bx bxs-down-arrow"></i>
+                        </div>
+                      </th>
+                      <th>
+                        Role{" "}
+                        <div className="arrow__btns">
+                          <i class="bx bxs-up-arrow"></i>
+                          <i class="bx bxs-down-arrow"></i>
+                        </div>
+                      </th>
                       <th></th>
                     </tr>
                   </thead>
