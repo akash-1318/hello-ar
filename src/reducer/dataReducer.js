@@ -11,7 +11,7 @@ const dataReducer = (state, action) => {
     case "ADD_LOCAL_DATA":
       return { ...state, userData: action.payload };
     case "DELETE_USER":
-        return {...state, userData : [...state.userData.filter((data,index) => index !== action.payload)]}  
+        return {...state, userData : [...state.userData.filter((data,index) => index !== action.payload)]} 
   }
 };
 

@@ -1,5 +1,5 @@
 import "./setting.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   Header,
   Sidebar,

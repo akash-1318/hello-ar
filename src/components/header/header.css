@@ -10,6 +10,7 @@
     width: 4rem;
     padding: .2rem;
     background-color: black;
+    cursor: pointer;
 }
 
 .logo > p{
@@ -30,6 +31,7 @@
     padding: .5rem 1rem;
     border-left: 1px solid var(--dark-secondry-color);
     color: var(--secondry-text-color);
+    cursor: pointer;
 }
 
 .logo__name > i, .header__right > i {
@@ -55,6 +57,7 @@
 .header__right {
     padding-left: 2rem;
     border-left: 1px solid var(--dark-secondry-color);
+    cursor: pointer;
 }
 
 .header__right > p {
